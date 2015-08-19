@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+<title>Timer</title>
+<script src="js/jquery-2.1.4min.js" type="text/javascript"></script>
+<link href="bootstrap-3.3.4-dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="bootstrap-3.3.4-dist/css/bootstrap-theme.min.css" rel="stylesheet">
+<link href="css/css/stylesheet.css" rel="stylesheet">
+<script src="js/timer.js" type="text/javascript"></script>
+
+<!-- check javascript is enabled -->
+<script language="JavaScript">
+    document.write(
+      '<style>#NoJS { display: none;}</style>'
+      );
+</script>
+<noscript>
+<style type="text/css">
+body .container {
+	display: none;
+}
+#NoJS {
+	display: block;
+	text-align: center;
+}
+</style>
+</noscript>
+</head>
+
+<body>
+
+<h1 id="NoJS"><span>Please enable JavaScript to use this page!</span></h1>
+<div class="container frstCont col-xs-12 col-sm-6 col-sm-push-3">
+	<h1 class="text-center" id="timerName">Timer</h1>
+	<div id="timeOutput">
+	
+		<span class="col-xs-3" id="timeOutputMM">00</span>
+		<span class="col-xs-1">:</span>
+		<span class="col-xs-3" id="timeOutputSS">00</span>
+		<span class="col-xs-1">:</span>
+		<span class="col-xs-3" id="timeOutputMS">000</span>
+		
+    </div>
+	<div id="timer-legend" class="col-xs-8 col-xs-push-2">
+		<span class="col-xs-3">min</span><span class="col-xs-1">:</span>
+		<span class="col-xs-3">sec</span><span class="col-xs-1">:</span>
+		<span class="col-xs-3">msec</span></div>
+	<div class="col-xs-10 col-xs-push-1  devideBlock">
+	</div>
+	<div id="continue" class="col-xs-4 btn-success">
+		resume</div>
+	<div id="pause" class="col-xs-4 btn-warning">
+		pause</div>
+	<div id="reset" class="col-xs-4 btn-danger">
+		reset</div>
+	<div id="timeStatus" class="col-xs-12">
+		ready</div>
+	<div class="col-xs-10 col-xs-push-1  devideBlock">
+	</div>
+	<h3 class="col-xs-12">Chose type of timer</h3>
+	<div class="col-xs-12 col-sm-4">
+		<div>
+			<input id="submit" class="btn-info" type="button" value="&nbsp; start  ">
+		</div>
+		<div>
+			<input id="cancel" class="btn-warning" type="button" value="&nbsp; cancel ">
+		</div>
+	</div>
+	<div class="col-xs-12 col-sm-8">
+		<div class="text-left">
+			<input id="timer" checked name="timer" type="radio">
+			<label for="timer">Timer</label>
+		</div>
+		<div class="text-left">
+			<input id="stopwatch" name="timer" type="radio">
+			<label for="stopwatch">Stopwatch Timer</label>
+		</div>
+		<div class="text-left">
+			<input id="countdown" name="timer" type="radio">
+	    <label for="countdown">Countdown Timer</label> </div>
+		<div class="text-left">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <label id="numlabel" for="num">please <br> type the limit time<br>in milliseconds</label>
+		</div>
+		<div class="text-left">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<input id="num" maxlength="15" type="text">
+		</div>
+	</div>
+</div>
+<script src="js/timerUI.V2.js" type="text/javascript"></script>
+
+</body>
+
+</html>

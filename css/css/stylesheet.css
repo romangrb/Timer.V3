@@ -1,0 +1,104 @@
+﻿@font-face {
+  font-family: 'Aldrich';
+  font-style: normal;
+  src: local('Aldrich'), 
+  url('../fonts/Aldrich/Aldrich.woff2') format('woff2'), 
+  url('../fonts/Aldrich/Aldrich.woff') format('woff');
+}
+
+body {
+    font-family: 'Aldrich', sans-serif;	
+    font-size:130%;
+    margin: 0;
+}
+
+.container {
+	border:2px black solid;
+	-moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -khtml-border-radius: 5px;
+    border-radius: 5px;   
+}
+
+div {
+    margin:5px 0px;
+    padding:7px;
+    text-align:center;
+}
+.devideBlock {
+	border:0;
+	margin:0;
+	padding:0;
+}
+#timeOutput{
+    border:1px grey solid;
+    background-color:aliceblue;
+    opacity:0.7;
+    height:60px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -khtml-border-radius: 5px;
+    border-radius: 5px;    
+    font-size:xx-large;  
+}
+#timeStatus {
+	font-weight:bold;
+	font-size:125%
+}
+
+
+
+
+#timer-legend {
+	padding:0;
+	font-weight:bold;
+	font-size:140%
+}
+
+#continue, #pause, #reset {
+	font-weight:bold;
+	font-size:140%
+}
+
+#num, #numlabel {
+  display:none;	
+}
+
+input[type=radio]:not(old){
+   width   : 28px;
+   margin  : 0;
+   padding : 0;
+   opacity : 0;
+}
+
+input[type=button]{
+    margin:0 0 15px;
+    font-weight:bold;
+	font-size:130%
+}
+input[type=text]{	
+    width:80%;
+	line-height:2px;
+	font-weight:bold;
+	font-size:140%;
+}
+input[type=text], input[type=button]{
+	padding:8px;  
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -khtml-border-radius: 3px;
+    border-radius: 3px;
+    border:1px grey solid;
+}
+
+input[type=radio]:not(old) + label{
+  display      : inline-block;
+  margin-left  : -28px;
+  padding-left : 28px;
+  background   : url('checks.png') no-repeat 0 0;
+  line-height  : 24px;
+}
+
+input[type=radio]:not(old):checked + label{
+  background-position : 0 -48px;
+}
